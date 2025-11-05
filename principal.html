@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau Professionnel</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .header h1 {
+            font-size: 22px;
+            color: #333;
+        }
+        
+        .add-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        
+        .add-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow-x: auto;
+        }
+        
+        thead {
+            background-color: #007bff;
+            color: #fff;
+        }
+        
+        th,
+        td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tbody tr:hover {
+            background-color: #f1f5ff;
+            transition: background 0.2s;
+        }
+        
+        .action-btns {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .btn {
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .btn.modify {
+            background-color: #ffc107;
+            color: #fff;
+        }
+        
+        .btn.modify:hover {
+            background-color: #e0a800;
+        }
+        
+        .btn.delete {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        
+        .btn.delete:hover {
+            background-color: #b52a36;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            th,
+            td {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 18px;
+            }
+            .add-btn {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Liste des Depenses</h1>
+            <button class="add-btn">+ Ajouter</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Categorie</th>
+                    <th>Nom</th>
+                    <th>Montant</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Electromenagers</td>
+                    <td>Achat d'un frigo</td>
+                    <td>4000 FCFA</td>
+                    <td>25/05/2006</td>
+                    <td>
+                        <div class="action-btns">
+                            <button class="btn modify">Modifier</button>
+                            <button class="btn delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Patisserie</td>
+                    <td>Achat d'un gateau</td>
+                    <td>200 FCFA</td>
+                    <TD>14/07/1997</TD>
+                    <td>
+                        <div class="action-btns">
+                            <button class="btn modify">Modifier</button>
+                            <button class="btn delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>electromenagers</td>
+                    <td>Achat d'un mico-onde</td>
+                    <td>4060 FCFA</td>
+                    <td>22/09/2017</td>
+                    <td>
+                        <div class="action-btns">
+                            <button class="btn modify">Modifier</button>
+                            <button class="btn delete">Supprimer</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
