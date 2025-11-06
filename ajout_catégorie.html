@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <!-- <script src="inscription.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="login">
+            <i class="fa-solid fa-layer-group" id="login-icon"></i>
+            <h1>Nouvelle catégorie</h1>
+        </div>
+    <form action="categorie.html" method="" id="form" name="form">
+              
+        <label for="email">Nom de la catégorie</label><br>
+        <div>
+            <input placeholder="Entrez le nom de la catégorie" type="text" id="email" name="catégorie" required>
+        </div>
+
+        <button onclick="window.location.href='categorie.html'" type="reset">Annuler</button>
+        <button type="submit">Créer</button>
+
+    </form>
+
+</body>
+<style>
+    input[type="text"]{
+   width: 90%;
+   border: none;
+    
+}
+form div{
+    height: 2.5em;
+    padding-left: 3%;
+    border: 1px solid white;
+    padding-right: 3%;
+    border-radius: 4px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 96%;
+}
+input:focus{
+    outline: none;
+
+}
+button{
+    border: none;
+    width: 30%;
+    height: 2.5em;
+    border-radius: 4px;
+    color: #001F3F;
+    font-size: 90%;
+    cursor: pointer;
+    margin-top: 8%;
+    font-weight: bold;
+    background-color: white;
+}
+button:hover{
+    background:none;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+button[type="reset"]{
+
+    margin-left: 12%;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+}
+button[type="submit"]{
+    margin-left: 15%;
+
+}
+#login-icon{
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 38%;
+    margin-top: 5%;
+    color: #001F3F;
+    width: 5em;
+    padding: 5%;
+    height: 5em;
+}
+#container{
+    border: 1px solid #001F3F;
+    border-radius: 10px;
+    width: 27%;
+    padding-left: 2%;
+    padding-right: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin:auto;
+    margin-top:5%;
+    /* filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.5)); */
+    background-color: #001F3F;
+    backdrop-filter: blur(5px);
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+}
+label{
+    color: white;
+    font-size: 120%;
+}
+</style>
+</html>

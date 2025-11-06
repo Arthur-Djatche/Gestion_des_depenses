@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une dépense - Gestion des dépenses</title>
+    <link rel="stylesheet" href="add_depense.css">
+</head>
+<body>
+    <div class="container">
+
+        <main>
+            <div class="form-container">
+                <h2>Ajouter une nouvelle dépense</h2>
+                
+                <form id="form-depense">
+                    <div class="form-group">
+                        <label for="nom_depense">Nom de la dépense</label>
+                        <input type="text" id="nom_depense" name="nom_depense" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="montant_depense">Montant (Fcfa)</label>
+                        <input type="number" id="montant_depense" name="montant_depense" min="0" step="0.01" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date_depense">Date de la dépense</label>
+                        <input type="date" id="date_depense" name="date_depense" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="id_cat">Catégorie</label>
+                        <select id="id_cat" name="id_cat" required>
+                            <option value="">Sélectionnez une catégorie</option>
+                            <option value="1">Alimentation</option>
+                            <option value="2">Transport</option>
+                            <option value="3">Logement</option>
+                            <option value="4">Loisirs</option>
+                            <option value="5">Santé</option>
+                            <option value="6">Éducation</option>
+                            <option value="7">Autres</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="btn-annuler" onclick="window.location ='principal.html'" class="btn btn-annuler">Annuler</button>
+                        <button type="submit" id="btn-valider" class="btn btn-valider">Valider</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- <script src="js/add_depense.js"></script> -->
+</body>
+</html>
