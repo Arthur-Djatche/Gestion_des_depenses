@@ -13,16 +13,9 @@
     <div id="container">
         <div id="login">
             <i class="fa-solid fa-user" id="login-icon"></i>
-            <h1>Inscription</h1>
+            <h1>Connexion</h1>
         </div>
     <form action="principal.html" method="" id="form" name="form">
-
-            <label for="name">Votre nom</label> <br>
-            <span class="span" id="name-error" ></span> 
-            <div>
-                <input placeholder="Entrez votre nom" type="text" id="name" name="name" required> 
-                <i class="fa-solid fa-user" id="icon"></i>
-            </div>
               
             <label for="email">Votre email</label><br>
             <span class="span" id="email-error" ></span>
@@ -38,23 +31,16 @@
                 <input type="password" placeholder="Entrez votre mot de passe"  id="password" name="password" required>
                 <i class="fa-solid fa-lock" id="icon" ></i>
             </div>
-
-             
-            <label for="password">Confirmez votre mot de passe</label><br>
-            <span class="span" id="password-confirm-error" ></span>
-            <div>
-                <input type="password" placeholder="Confirmez votre mot de passe"  id="passwordconfirm" name="password" required>
-                <i class="fa-solid fa-lock" id="icon"></i>
-            </div>
             <input type="checkbox" name="remember" id="remember">
-            <label id="remember-label" for="remember">Se souvenir de moi</label><br>
+            <label id="remember-label" for="remember">Se souvenir de moi</label>
+            <a id="forgot" href="#">Mot de passe oublié ?</a><br>
 
             <button type="reset">Annuler</button>
-            <button type="submit">S'inscrire</button>
+            <button type="submit">Se connecter</button>
             
         </form>
         <div id="notaccount">
-            Déjà un compte ? <a href="connexion.html">Connectez-vous</a>
+            Pas de compte ? <a href="inscription.html">Inscrivez-vous</a>
             
         </div>
 </body>

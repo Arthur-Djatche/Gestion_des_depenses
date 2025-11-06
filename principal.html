@@ -24,18 +24,18 @@
         
         .header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             margin-bottom: 25px;
         }
         
         .header h1 {
             font-size: 22px;
+            margin-right: 30%;
             color: #333;
         }
         
         .add-btn {
-            background-color: #007bff;
+            background-color: #001F3F;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -46,7 +46,7 @@
         }
         
         .add-btn:hover {
-            background-color: #0056b3;
+            background-color: #001F3F;
         }
         
         table {
@@ -56,7 +56,7 @@
         }
         
         thead {
-            background-color: #007bff;
+            background-color: #001F3F;
             color: #fff;
         }
         
@@ -120,6 +120,20 @@
                 padding: 8px 15px;
                 font-size: 14px;
             }
+        
+        }
+        .select{
+                margin-right: 3%;
+                width: 18%;
+        }
+        select{
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #001F3F;
+        }
+        .select label{
+            font-weight: 600;
+            margin-right: 1%;
         }
     </style>
 </head>
@@ -129,61 +143,82 @@
     <div class="container">
         <div class="header">
             <h1>Liste des Depenses</h1>
+            <div class="select">
+                <label for="">Trier par</label>
+                <select name="" id="">
+                    <option value="">Chronologie</option>
+                    <option value="">Montant</option>
+                    <option value="">Categorie</option>
+                </select>
+            </div>
+            <div class="select">
+                <label for="">Catégories</label>
+                <select name="" id="">
+                    <option value="">Alimentation</option>
+                    <option value="">Education</option>
+                    <option value="">Loisirs</option>
+                </select>
+            </div>
             <button class="add-btn">+ Ajouter</button>
         </div>
 
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Categorie</th>
                     <th>Nom</th>
                     <th>Montant</th>
                     <th>Date</th>
-                    <th>Actions</th>
             </thead>
 
             <tbody>
                 <tr>
-                    <td>1</td>
                     <td>Electromenagers</td>
                     <td>Achat d'un frigo</td>
                     <td>4000 FCFA</td>
                     <td>25/05/2006</td>
-                    <td>
-                        <div class="action-btns">
-                            <button class="btn modify">Modifier</button>
-                            <button class="btn delete">Supprimer</button>
-                        </div>
-                    </td>
+                    
                 </tr>
 
                 <tr>
-                    <td>2</td>
+                    <td>Electromenagers</td>
+                    <td>Achat d'un frigo</td>
+                    <td>4000 FCFA</td>
+                    <td>25/05/2006</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Electromenagers</td>
+                    <td>Achat d'un frigo</td>
+                    <td>4000 FCFA</td>
+                    <td>25/05/2006</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Electromenagers</td>
+                    <td>Achat d'un frigo</td>
+                    <td>4000 FCFA</td>
+                    <td>25/05/2006</td>
+                    
+                </tr>
+                </var>
+
+                <tr>
                     <td>Patisserie</td>
                     <td>Achat d'un gateau</td>
                     <td>200 FCFA</td>
-                    <TD>14/07/1997</TD>
-                    <td>
-                        <div class="action-btns">
-                            <button class="btn modify">Modifier</button>
-                            <button class="btn delete">Supprimer</button>
-                        </div>
-                    </td>
+                    <td>14/07/1997</td>
+                    
                 </tr>
 
                 <tr>
-                    <td>3</td>
                     <td>electromenagers</td>
                     <td>Achat d'un mico-onde</td>
                     <td>4060 FCFA</td>
                     <td>22/09/2017</td>
-                    <td>
-                        <div class="action-btns">
-                            <button class="btn modify">Modifier</button>
-                            <button class="btn delete">Supprimer</button>
-                        </div>
-                    </td>
+                   
                 </tr>
             </tbody>
         </table>
